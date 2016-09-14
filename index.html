@@ -8,33 +8,34 @@
 
 <body>
   <main>
-    <form action="http://requestb.in/rbrmu8rb" method="post" autocomplete>
+    <form action="http://requestb.in/wagyzbwa" method="post" autocomplete>
     <h1>Force User Sign Up Form</h1>
 
     <fieldset class="col-1-3">
       <legend>Basic Info</legend>
-      <label for="fullName">Full Name</label>
-      <input name="fullName" id="fullName" type="text" placeholder="Luke Skywalker" required>
+
+      <label for="fullName">Full Name</label><br>
+      <input name="fullName" id="fullName" type="text" placeholder="Luke Skywalker" class="text-input" required>
       <br><br>
 
-      <legend>Profile Pic</legend>
-      <input type="file" id="profilePic" name="profilePic" value="profilePic">
+      <label>Profile Pic</label><br>
+      <input type="file" id="profilePic" name="profilePic" accept="image/*">
       <br><br>
 
       <label for="email">Email</label><br>
-      <input name="email" id="email" type="email" placeholder="luke@sky.com" required>
+      <input name="email" id="email" type="email" placeholder="luke@sky.com" class="text-input" required>
       <br><br>
 
-      <legend>Side:</legend>
-      <input name="side" id="light" type="radio" value="light">
-      <label for="light">Light</label>
-      <input name="side" id="dark" type="radio" value="dark">
-      <label for="dark">Dark</label>
-      <br><br>
+      <label>Side:</label>
+      <div>
+        <input name="side" id="light" type="radio" value="light">
+        <label for="light">Light</label>
+        <input name="side" id="dark" type="radio" value="dark">
+        <label for="dark">Dark</label>
+      </div><br>
 
-      <label for="originStory">Origin Story</label>
-      <br>
-      <textarea name="originStory" id="originStory" rows="5" cols="50" required></textarea>
+      <label for="originStory">Origin Story</label><br>
+      <textarea name="originStory" id="originStory" rows="5" cols="54" required></textarea>
     </fieldset>
 
     <fieldset class="col-1-3">
@@ -49,43 +50,45 @@
       </select>
       <br><br>
 
-      <label for="numberOfObjects">How many objects can you levitate at once?</label>
-      <br>
-      <input name="numberOfObjects" id="numberOfObjects" type="number" min="0">
+      <label for="numberOfObjects">How many objects can you levitate at once?</label><br>
+      <input name="numberOfObjects" id="numberOfObjects" type="number" min="0" style="border-radius: 5px;">
       <br><br>
-      <label for="favoriteAbility">Favorite Ability</label>
-      <br>
-      <input name="favoriteAbility"id="favoriteAbility" type="text" placeholder="precognition">
+      <label for="favoriteAbility">Favorite Ability</label><br>
+      <input name="favoriteAbility"id="favoriteAbility" type="text" placeholder="precognition" class="text-input">
       <br><br>
 
-      <legend>Pilot Experience</legend>
-        <input name="pilotExperience" id="speeder" type="radio" value="speeder">
+      <label>Pilot Experience</label>
+        <div>
+        <input name="pilotExperience" id="speeder" type="checkbox" value="speeder">
         <label for="speeder">Speeder</label>
-        <input name="pilotExperience" id="transport" type="radio" value="transport">
+        <input name="pilotExperience" id="transport" type="checkbox" value="transport">
         <label for="transport">Transport</label>
-        <input name="pilotExperience" id="x-wing" type="radio" value="x-wing">
+        <input name="pilotExperience" id="x-wing" type="checkbox" value="x-wing">
         <label for="x-wing">X-Wing</label>
-        <input name="pilotExperience" id="tieFighter" type="radio" value="tieFighter">
+        <input name="pilotExperience" id="tieFighter" type="checkbox" value="tieFighter">
         <label for="tieFighter">TIE Fighter</label>
-        <input name="pilotExperience" id="starship" type="radio" value="starship">
+        <input name="pilotExperience" id="starship" type="checkbox" value="starship">
         <label for="starship">Starship</label>
-        <input name="pilotExperience" id="bantha" type="radio" value="bantha">
+        <input name="pilotExperience" id="bantha" type="checkbox" value="bantha">
         <label for="bantha">Bantha</label>
+      </div>
     </fieldset>
 
     <fieldset class="col-1-3">
       <legend>Application Info</legend>
       <label for="desiredMentor">Desired Mentor</label><br>
-      <input name="desiredMentor" type="text" id="desiredMentor" placeholder="Yoda">
+      <input name="desiredMentor" type="text" id="desiredMentor" placeholder="Yoda" class="text-input">
       <br><br>
+
       <label for="applicationDate">Application Date</label><br>
       <input name="applicationDate" id="applicationDate" type="date" required>
+
       <br><br>
       <label for="applicationPassword">Application Password</label><br>
       <input name="applicationPassword" id="applicationPassword" type="password" required>
       <br><br>
       <label for="howDark">How did you get to the dark side?</label>
-      <textarea name="howDark" id="howDark" rows="5" cols="50"></textarea>
+      <textarea name="howDark" id="howDark" rows="5" cols="54"></textarea>
       <input type="reset" value="Start Over">
       <input type="submit" value="Apply">
     </fieldset>

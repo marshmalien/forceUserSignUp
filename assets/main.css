@@ -1,23 +1,86 @@
-
+/*
+==========================
+Fieldset
+==========================
+*/
 .col-1-3 {
   width: 350px;
   display: inline-block;
-  margin: 0 0;
+  margin: 1px;
   vertical-align: top;
-}
-
-fieldset {
   position: relative;
 }
-input[type="number"] {
-  width: 30px;
+.text-input {
+  width: 340px;
+  border: 2px solid #CCC;
+  border-radius: 5px;
+  border-style: inset;
 }
-
-
+fieldset {
+  position: relative;
+  border: 2px solid #6D7279;
+}
+input[type="number"] {
+  width: 40px;]
+  border-radius: 5px;
+}
+textarea {
+  border-radius: 5px;
+}
+input[type="password"] {
+  border-radius: 5px;
+}
+input[type="date"] {
+  border-radius: 5px;
+}
+/*
+==========================
+Font
+==========================
+*/
+label {
+  font-weight: bold;
+}
+div label {
+  font-weight: normal;
+}
+/*
+==========================
+Invalid Input
+==========================
+*/
 input:focus {
   outline: none !important;
-  border-color: red;
+  border-color: #F90000;
+  border-style: outset;
+  border-width: 3px;
 }
-submit input:required:invalid  {
-  background-color: green;
+
+textarea:focus {
+  outline: none !important;
+  border-color: #F90000;
+  border-style: outset;
+  border-width: 3px;
+}
+input:focus:invalid {
+  background-color: #FFDFE0;
+}
+textarea:focus:invalid {
+  background-color: #FFDFE0;
+}
+#profilePic:focus {
+  border-color: transparent;;
+}
+/*
+==========================
+Buttons
+==========================
+*/
+input[type="reset"] {
+  background-color: #95C8FC;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  background-color: #95C8FC;
+  border-radius: 5px;
 }
